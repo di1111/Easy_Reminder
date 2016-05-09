@@ -6,6 +6,9 @@ import eventManager
 tk = Tk()
 canvas = Canvas(tk, width=500, height=500)
 
+#Create addeditEvents
+addeditEvents = eventManager.addeditEvents()
+
 # Define variables
 dayWidth = 68.571428571
 dayHight = 83.333333333
@@ -22,7 +25,7 @@ for x in range(1, 7):
     dayWidth = 68.571428571
 
 # Make Button
-btnNewEvent = Button(tk, text="New event", command=eventManager.addeditEvents.mknewEvent())
+btnNewEvent = Button(tk, text="New event", command=addeditEvents.mknewEvent)
 
 # Draw
 btnNewEvent.pack()
